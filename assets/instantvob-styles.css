@@ -1,0 +1,76 @@
+.instantvob_form {
+  display: flex;
+  flex-flow: column;
+}
+
+.instantvob_form_row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* This is for our anti-spam field*/
+.instantvob_form_row__highlight {
+  display: none;
+}
+
+.instantvob_form_row_cell {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  margin-right: 10px;
+}
+
+.instantvob_form_row_cell:last-child {
+  margin-right: 0;
+}
+
+.instantvob_form_row_cell label {
+  display: block;
+}
+
+.instantvob_form_row_cell input,
+.instantvob_form_row_cell textarea,
+.instantvob_form_row_cell button,
+.instantvob_form_row_cell select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  display: block;
+}
+
+.instantvob_form_message {
+  background: #69bf82;
+  color: #FFFFFF;
+  padding: 4px 8px;
+}
+
+.instantvob_form_error {
+  background: #ff6676;
+  color: #FFFFFF;
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+
+.instantvob_form_message:empty,
+.instantvob_form_error:empty {
+  padding: 0;
+}
+
+.instantvob_branding {
+  display: none;
+}
+
+.instantvob_branding__shown {
+  display: flex;
+  justify-content: center;
+}
+
+.instantvob_branding_container {
+  text-align: center;
+}
+
+.instantvob_branding_logo {
+  width: 150px;
+}
